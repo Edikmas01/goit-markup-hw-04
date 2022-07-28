@@ -139,6 +139,28 @@ body {
   margin-right: 30px;
 }
 
+.envelope-icon-header {
+  justify-items: center;
+  align-items: center;
+  margin-right: 10px;
+  fill: var(--pre-title-color);
+}
+
+.envelope-icon-header:hover {
+  fill: var(--accent-color);
+}
+
+.phone-icon-header {
+  justify-items: center;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 10px;
+  fill: var(--pre-title-color);
+}
+
+.phone-icon-header:hover {
+  fill: var(--accent-color);
+}
 /*-----hero-----*/
 
 .hero {
@@ -223,6 +245,19 @@ body {
   height: 75px;
 }
 
+.info-list {
+  padding: 0;
+}
+
+.info-item {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+.info-item {
+  padding: 25px 102px;
+}
 /*----------gallery-------*/
 .gallery {
   padding-bottom: 94px;
@@ -288,6 +323,7 @@ body {
   gap: 10px;
   padding: 0;
 }
+
 .team-soc-link {
   width: 44px;
   height: 44px;
