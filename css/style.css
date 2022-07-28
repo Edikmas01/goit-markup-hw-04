@@ -146,6 +146,14 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../photo/beckground1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -251,7 +259,6 @@ body {
 
 .team-div {
   margin-top: 30px;
-  padding-bottom: 30px;
 }
 
 .team-name {
@@ -272,6 +279,35 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--pre-title-color);
+  margin-bottom: 16px;
+}
+
+.team-soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-soc-icon {
+  fill: #afb1b8;
+}
+
+.team-soc-link:hover {
+  background-color: var(--accent-color);
+}
+
+.team-soc-link:hover .team-soc-icon {
+  fill: #ffffff;
 }
 
 /*--------------footer/INDEX/PORTFOLIO/--------*/
