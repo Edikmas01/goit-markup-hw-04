@@ -346,6 +346,45 @@ body {
   fill: #ffffff;
 }
 
+/*------------- client -------*/
+.client {
+  padding-bottom: 94px;
+}
+.client-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.client-list {
+  display: flex;
+
+  gap: 30px;
+  padding: 0;
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-icon {
+  fill: #afb1b8;
+}
+
+.client-icon:hover {
+  fill: var(--accent-color);
+}
+
+.client-item:hover {
+  border-color: var(--accent-color);
+}
+
 /*--------------footer/INDEX/PORTFOLIO/--------*/
 
 .footer {
@@ -397,6 +436,10 @@ body {
   color: var(--accent-color);
 }
 
+.footer-item {
+  margin-right: 70px;
+}
+
 .footer-email,
 .footer-tel {
   font-style: normal;
@@ -422,6 +465,44 @@ body {
 }
 .footer-email {
   margin-bottom: 9px;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.footer-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-soc-icon {
+  fill: #ffffff;
+}
+
+.footer-soc-link:hover {
+  background-color: var(--accent-color);
+}
+
+.footer-soc-link:hover .footer-soc-icon {
+  fill: #ffffff;
+}
+
+.contact-war .container {
+  display: flex;
 }
 /*------------ PORTFOLIO.HTML------ --*/
 /*-- menu--*/
