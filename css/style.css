@@ -18,9 +18,11 @@ ul,
 ol {
   margin: 0;
 }
+
 a {
   color: currentColor;
 }
+
 button {
   cursor: pointer;
 }
@@ -38,12 +40,15 @@ button {
 body {
   font-family: "roboto", sans-serif;
 }
+
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
