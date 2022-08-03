@@ -114,6 +114,7 @@ body {
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .header-email,
 .header-tel {
   font-weight: 500;
@@ -121,16 +122,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--pre-title-color);
-}
-
-.header-email:hover,
-.header-email:focus {
-  color: var(--accent-color);
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
 }
 
 .header-connect {
@@ -142,37 +133,42 @@ body {
 }
 
 .envelope-icon-header {
-  justify-items: center;
-  align-items: center;
   margin-right: 10px;
   fill: var(--pre-title-color);
 }
 
-.envelope-icon-header:hover {
-  fill: var(--accent-color);
+.header-email:hover {
+  color: var(--accent-color);
+}
+.header-email:hover .envelope-icon-header {
+  fill: #2196f3;
 }
 
-.envelope-link:focus {
-  color: #2196f3;
+.header-email:focus {
+  color: var(--accent-color);
+}
+.header-email:focus .envelope-icon-header {
+  fill: #2196f3;
 }
 
 .phone-icon-header {
-  justify-items: center;
-  align-items: center;
-  margin-left: 30px;
   margin-right: 10px;
   fill: var(--pre-title-color);
 }
 
-.phone-icon-header:hover {
-  fill: #2196f3;
+.header-tel:hover {
+  color: var(--accent-color);
 }
-.phone-link:focus {
+.header-tel:hover .phone-icon-header {
   fill: #2196f3;
 }
 
-/*-----hero-----*/
-
+.header-tel:focus {
+  color: var(--accent-color);
+}
+.header-tel:focus .phone-icon-header {
+  fill: #2196f3;
+}
 .hero {
   background-color: #2f303a;
   padding-top: 200px;
@@ -251,17 +247,13 @@ body {
   height: 75px;
 }
 
-.info-list {
-  padding: 0;
-}
-
-.info-item {
+.icon {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
-.info-item {
+.icon {
   padding: 25px 102px;
 }
 /*----------gallery-------*/
@@ -298,6 +290,7 @@ body {
 
 .team-item {
   width: calc((100% - 90px) / 4);
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -502,7 +495,13 @@ body {
 }
 
 .footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #ffffff;
+
   margin-bottom: 20px;
   padding-top: 12px;
 }
